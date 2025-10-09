@@ -142,17 +142,22 @@
                         <span class="code-file">deploy.py</span>
                     </div>
                     <pre><code><span class="code-comment"># Install and configure nginx</span>
-<span class="code-keyword">from</span> pyinfra.operations <span class="code-keyword">import</span> apt, server
+<span class="code-keyword">from</span> pyinfra.operations <span class="code-keyword">import</span> apt, systemd
 
 apt.packages(
     name=<span class="code-string">"Install nginx"</span>,
     packages=[<span class="code-string">"nginx"</span>],
 )
 
-server.shell(
-    name=<span class="code-string">"Start nginx"</span>,
-    commands=[<span class="code-string">"systemctl start nginx"</span>],
-)</code></pre>
+
+systemd.service(
+    name=<span class="code-string">"Restart and enable the nginx service"</span>,
+    service=<span class="code-string">"nginx.service"</span>,
+    running=<span class="code-string">True</span>,
+    restarted=<span class="code-string">True</span>,
+    enabled=<span class="code-string">True</span>,
+)
+</code></pre>
                 </div>
                 <div class="code-benefits">
                     <h3>Simple, Powerful, Pythonic</h3>
