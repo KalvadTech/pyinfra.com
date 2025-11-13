@@ -91,50 +91,36 @@
                 <h1 class="visually-hidden">pyinfra - Python Infrastructure Automation</h1>
                 <p class="big hero-text">pyinfra turns Python code into shell commands and runs them on your servers. Execute ad-hoc commands and write declarative operations. Target SSH servers, local machine and Docker containers. Fast and scales from one server to thousands.</p>
                 <p class="big comparison-text">Think <code>ansible</code> but Python instead of YAML, and <strong>up to 10x faster</strong>.</p>
-
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number">10x</div>
-                        <div class="stat-label">Faster than Ansible</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">4.4k+</div>
-                        <div class="stat-label">GitHub Stars</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Python</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">0</div>
-                        <div class="stat-label">Agent Dependencies</div>
-                    </div>
-                </div>
             </article>
         </div>
     </div>
     <div class="container">
         <div>
+            <h2 class="features-heading">Why Choose pyinfra?</h2>
             <article class="markdown-body">
-                <h2 class="features-heading">Why Choose pyinfra?</h2>
                 <ul class="features">
-                <li><i aria-hidden="true">🚀</i> <strong>Super Fast Execution</strong> — Deploy to thousands of targets with predictable performance. Up to 10x faster than Ansible.</li>
-                <li><i aria-hidden="true">🚨</i> <strong>Instant Debugging</strong> — Get realtime output from shell commands with no abstraction layer for immediate troubleshooting.</li>
-                <li><i aria-hidden="true">🔄</i> <strong>Declarative Operations</strong> — Only make changes when needed with built-in diff checking and idempotent operations.</li>
-                <li><i aria-hidden="true">📦</i> <strong>Fully Extendable</strong> — Leverage the entire Python package ecosystem. Write inventory and operations in pure Python.</li>
-                <li><i aria-hidden="true">💻</i> <strong>Agentless Architecture</strong> — Deploy to any system with POSIX shell access. Zero dependencies on target systems.</li>
-                <li><i aria-hidden="true">🔌</i> <strong>Seamless Integration</strong> — Pull inventory from Terraform, execute against Docker containers, integrate with your DevOps toolchain.</li>
+                <li><strong><i aria-hidden="true">🚀</i> Super Fast Execution</strong> Deploy to thousands of targets with predictable performance. Up to 10x faster than Ansible.</li>
+                <li><strong><i aria-hidden="true">🚨</i> Instant Debugging</strong> Get realtime output from shell commands with no abstraction layer for immediate troubleshooting.</li>
+                <li><strong><i aria-hidden="true">🔄</i> Declarative Operations</strong> Only make changes when needed with built-in diff checking and idempotent operations.</li>
+                <li><strong><i aria-hidden="true">📦</i> Fully Extendable</strong> Leverage the entire Python package ecosystem. Write inventory and operations in pure Python.</li>
+                <li><strong><i aria-hidden="true">💻</i> Agentless Architecture</strong> Deploy to any system with POSIX shell access. Zero dependencies on target systems.</li>
+                <li><strong><i aria-hidden="true">🔌</i> Seamless Integration</strong> Pull inventory from Terraform, execute against Docker containers, integrate with your DevOps toolchain.</li>
                 </ul>
 
             </article>
         </div>
     </div>
 
+    <div class="container buttons">
+        <a class="button" href="https://docs.pyinfra.com/page/getting-started.html" aria-label="Get started with pyinfra documentation">Getting Started</a>
+        <a class="button" href="https://github.com/pyinfra-dev/pyinfra-examples" aria-label="View pyinfra code examples on GitHub">Examples Repo</a>
+    </div>
+
     <!-- Code Example Section -->
     <div class="container-wide">
         <div class="code-example-section">
             <h2 class="features-heading">See It In Action</h2>
-            <p class="section-intro">Write infrastructure automation in pure Python. No YAML, no DSL, just clean, readable Python code.</p>
+            <p class="section-intro">Write infrastructure automation in pure Python. No YAML, no DSL, just Python code.</p>
 
             <div class="code-example-wrapper">
                 <div class="code-example">
@@ -162,10 +148,10 @@ systemd.service(
                 <div class="code-benefits">
                     <h3>Simple, Powerful, Pythonic</h3>
                     <ul>
-                        <li><strong>No new syntax to learn</strong> — If you know Python, you know pyinfra</li>
-                        <li><strong>Full Python capabilities</strong> — Use loops, conditions, functions, and any Python library</li>
-                        <li><strong>Type hints & IDE support</strong> — Get autocomplete and inline documentation</li>
-                        <li><strong>Instant feedback</strong> — See exactly what commands run on your servers in real-time</li>
+                        <li><strong>No new syntax to learn</strong> If you know Python, you know pyinfra</li>
+                        <li><strong>Full Python capabilities</strong> Use loops, conditions, functions, and any Python library</li>
+                        <li><strong>Type hints & IDE support</strong> Get autocomplete and inline documentation</li>
+                        <li><strong>Instant feedback</strong> See exactly what commands run on your servers in real-time</li>
                     </ul>
                 </div>
             </div>
@@ -211,62 +197,34 @@ systemd.service(
         </div>
     </div>
 
-    <!-- Comparison Section -->
-    <div class="container">
-        <div class="comparison-section">
-            <h2 class="features-heading">How pyinfra Compares</h2>
-            <div class="comparison-table-wrapper">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th>pyinfra</th>
-                            <th>Ansible</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Language</td>
-                            <td><span class="check">✓</span> Pure Python</td>
-                            <td>YAML + Jinja2</td>
-                        </tr>
-                        <tr>
-                            <td>Speed</td>
-                            <td><span class="check">✓</span> 10x faster</td>
-                            <td>Slower execution</td>
-                        </tr>
-                        <tr>
-                            <td>Agent Required</td>
-                            <td><span class="check">✓</span> No</td>
-                            <td><span class="check">✓</span> No</td>
-                        </tr>
-                        <tr>
-                            <td>Real-time Output</td>
-                            <td><span class="check">✓</span> Yes</td>
-                            <td>Limited</td>
-                        </tr>
-                        <tr>
-                            <td>Idempotent Operations</td>
-                            <td><span class="check">✓</span> Built-in</td>
-                            <td><span class="check">✓</span> Built-in</td>
-                        </tr>
-                        <tr>
-                            <td>Target Systems</td>
-                            <td><span class="check">✓</span> SSH, Docker, Local</td>
-                            <td>SSH, WinRM</td>
-                        </tr>
-                        <tr>
-                            <td>Learning Curve</td>
-                            <td><span class="check">✓</span> Low (if you know Python)</td>
-                            <td>Medium</td>
-                        </tr>
-                        <tr>
-                            <td>Extensibility</td>
-                            <td><span class="check">✓</span> Full Python ecosystem</td>
-                            <td>Limited to modules</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <div class="container buttons">
+        <a class="button" href="https://docs.pyinfra.com/page/getting-started.html" aria-label="Get started with pyinfra documentation">Getting Started</a>
+        <a class="button" href="https://github.com/pyinfra-dev/pyinfra-examples" aria-label="View pyinfra code examples on GitHub">Examples Repo</a>
+    </div>
+
+    <!-- Community Section -->
+    <div class="container-wide">
+        <div class="community-section">
+            <h2 class="features-heading">Join the Community</h2>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-icon">💬</div>
+                    <h3>Get Support</h3>
+                    <p>Join our active Matrix chat for help, discussions, and to connect with other pyinfra users and contributors.<br />&nbsp;</p>
+                    <a href="https://matrix.to/#/#pyinfra:matrix.org" class="community-link">Join Chat →</a>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">📚</div>
+                    <h3>Read the Docs</h3>
+                    <p>Comprehensive documentation with guides, API references, and examples to help you get started and master pyinfra.</p>
+                    <a href="https://docs.pyinfra.com" class="community-link">View Docs →</a>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">🤝</div>
+                    <h3>Contribute</h3>
+                    <p>pyinfra is open source and welcomes contributions. Report bugs, suggest features, or contribute code on GitHub.</p>
+                    <a href="https://github.com/pyinfra-dev/pyinfra" class="community-link">View on GitHub →</a>
+                </div>
             </div>
         </div>
     </div>
@@ -299,33 +257,6 @@ systemd.service(
                 <div class="faq-item">
                     <h3>What's the performance overhead?</h3>
                     <p>Minimal. pyinfra uses efficient SSH multiplexing and parallel execution. It can manage thousands of servers simultaneously with low resource usage and predictable performance.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Community Section -->
-    <div class="container">
-        <div class="community-section">
-            <h2 class="features-heading">Join the Community</h2>
-            <div class="community-grid">
-                <div class="community-card">
-                    <div class="community-icon">💬</div>
-                    <h3>Get Support</h3>
-                    <p>Join our active Matrix chat for help, discussions, and to connect with other pyinfra users and contributors.</p>
-                    <a href="https://matrix.to/#/#pyinfra:matrix.org" class="community-link">Join Chat →</a>
-                </div>
-                <div class="community-card">
-                    <div class="community-icon">📚</div>
-                    <h3>Read the Docs</h3>
-                    <p>Comprehensive documentation with guides, API references, and examples to help you get started and master pyinfra.</p>
-                    <a href="https://docs.pyinfra.com" class="community-link">View Docs →</a>
-                </div>
-                <div class="community-card">
-                    <div class="community-icon">🤝</div>
-                    <h3>Contribute</h3>
-                    <p>pyinfra is open source and welcomes contributions. Report bugs, suggest features, or contribute code on GitHub.</p>
-                    <a href="https://github.com/pyinfra-dev/pyinfra" class="community-link">View on GitHub →</a>
                 </div>
             </div>
         </div>
