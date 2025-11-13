@@ -15,31 +15,6 @@ pyinfra.com/
 └── README.md           # This file
 ```
 
-## 🎨 Website Overview
-
-This is a static HTML website designed with modern web standards in mind:
-
-### SEO Optimization
-- **Comprehensive meta tags** - Title, description, keywords optimized for search engines
-- **Structured data (JSON-LD)** - Rich snippets for better search visibility
-- **Open Graph tags** - Optimized social media sharing for Facebook/LinkedIn
-- **Twitter Card tags** - Enhanced Twitter sharing experience
-- **Semantic HTML** - Proper heading hierarchy and ARIA labels
-- **Mobile-first responsive design** - Optimized for all device sizes
-
-### Design Features
-- **Modern visual elements** - Gradient backgrounds, smooth transitions, hover effects
-- **Accessibility** - ARIA labels, semantic HTML, keyboard navigation support
-- **Performance optimized** - Preconnect hints, async loading, efficient CSS
-- **Professional typography** - Roboto Slab font for headings
-- **Color scheme** - Clean green gradient matching the pyinfra brand
-
-### Technical SEO
-- **Fast loading times** - Minimal dependencies, optimized assets
-- **Mobile-friendly** - Responsive design with proper viewport configuration
-- **Clean URL structure** - Canonical URLs and proper redirects
-- **Analytics integration** - Privacy-focused analytics via Plausible
-
 ## 🔧 Development
 
 ### Local Testing
@@ -52,13 +27,6 @@ python -m http.server 8000
 ```
 
 Then navigate to `http://localhost:8000`
-
-### Making Changes
-
-1. **HTML content** - Edit `index.html` for content updates
-2. **Styles** - Modify `static/pyinfra.css` for design changes
-3. **Test locally** - Always test changes in a browser before deploying
-4. **SEO updates** - Update meta tags when changing page content
 
 ## 🔗 Links
 
